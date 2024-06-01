@@ -1,4 +1,5 @@
 import { Hero } from "../sections";
+import Head from 'next/head';
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
