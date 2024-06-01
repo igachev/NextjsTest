@@ -1,5 +1,6 @@
 import { Hero } from "../sections";
 import Head from 'next/head';
+import { Agency } from "../sections/Agency/Agency";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -22,6 +23,7 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
+        <Agency />
       </div>
     </>
   );
