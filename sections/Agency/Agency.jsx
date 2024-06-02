@@ -46,6 +46,10 @@ width: 500px;
 min-width: 500px;
 `;
 
+const ImageBox = styled.div`
+min-width: 150px;
+
+`;
 
 
 export const Agency = () => {
@@ -57,7 +61,9 @@ export const Agency = () => {
             <ArticleContainer>
 
                 <Article>
+                    <ImageBox>
                     <Image src="/img/video.png"  width={300} height={500} />
+                    </ImageBox>
                 </Article>
 
                 <Article>
