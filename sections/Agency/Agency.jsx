@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-image: url('/img/background.png');
+background-image: url(${(props) => props.backgroundImage});
 background-size: 900px;
 background-repeat: no-repeat;
 background-position: 300px 190px;
@@ -162,6 +162,7 @@ font-family: Poppins;
 
 `;
 
+
 const ArticleContainer = styled.div`
 display: flex;
 justify-content: center;
@@ -236,17 +237,28 @@ padding: 0 2rem;
 text-align: left;
 `;
 
-export const Agency = () => {
+export const Agency = ({
+  title,
+  subtitle,
+  backgroundImage,
+  image,
+  cardHeading1,
+  cardParagraph1,
+  cardHeading2,
+  cardParagraph2,
+  cardHeading3,
+  cardParagraph3
+}) => {
 
     return (
-        <Section>
-            <Title>Managed agency selection</Title>
-            <SubTitle>strengthen your onboarding process</SubTitle>
+        <Section backgroundImage={backgroundImage}>
+            <Title>{title}</Title>
+            <SubTitle>{subtitle}</SubTitle>
             <ArticleContainer>
 
                 <Article>
                     <ImageBox>
-                    <Image src="/img/video.png"  width={300} height={500} />
+                    <Image src={image}  width={300} height={500} />
                     </ImageBox>
                 </Article>
 
@@ -258,8 +270,8 @@ export const Agency = () => {
                         </CardIcon>
 
                         <CardDiv>
-                        <CardHeading>Brief</CardHeading>
-                        <CardParagraph>Complete <strong>brief writing or simple guidance</strong> on what to include,we've got you covered.</CardParagraph>
+                        <CardHeading>{cardHeading1}</CardHeading>
+                        <CardParagraph dangerouslySetInnerHTML={{ __html: cardParagraph1 }}></CardParagraph>
                         </CardDiv>
 
                     </Card>
@@ -270,8 +282,8 @@ export const Agency = () => {
                         </CardIcon>
 
                         <CardDiv>
-                        <CardHeading>Search</CardHeading>
-                        <CardParagraph>In-depth agency search covering;<strong>criteria-matching</strong>,door knocking and due-dilligence vetting.</CardParagraph>
+                        <CardHeading>{cardHeading2}</CardHeading>
+                        <CardParagraph dangerouslySetInnerHTML={{__html: cardParagraph2}}></CardParagraph>
                         </CardDiv>
 
                     </Card>
@@ -282,8 +294,8 @@ export const Agency = () => {
                         </CardIcon>
 
                         <CardDiv>
-                        <CardHeading>Pitch</CardHeading>
-                        <CardParagraph>Comprehensive <strong>pitch management</strong>,including comms,diary management and pitch hosting.</CardParagraph>
+                        <CardHeading>{cardHeading3}</CardHeading>
+                        <CardParagraph dangerouslySetInnerHTML={{__html: cardParagraph3}}></CardParagraph>
                         </CardDiv>
 
                     </Card>

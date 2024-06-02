@@ -23,7 +23,18 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
-        <Agency />
+        <Agency 
+        title={'Managed agency selection'}
+        subtitle={'strengthen your onboarding process'} 
+        backgroundImage={'/img/background.png'} 
+        image={"/img/video.png"}
+        cardHeading1={'Brief'}
+        cardParagraph1={"Complete <strong>brief writing or simple guidance</strong> on what to include,we've got you covered."}
+        cardHeading2={"Search"}
+        cardParagraph2={"In-depth agency search covering;<strong>criteria-matching</strong>,door knocking and due-dilligence vetting."}
+        cardHeading3={"Pitch"}
+        cardParagraph3={"Comprehensive <strong>pitch management</strong>,including comms,diary management and pitch hosting."}
+        />
       </div>
     </>
   );
