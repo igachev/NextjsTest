@@ -5,103 +5,104 @@ const Section = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 background-image: url('/img/background.png');
 background-size: 900px;
 background-attachment: fixed;
 background-repeat: no-repeat;
-background-position: 300px 480px;
+background-position: 310px 470px;
 font-family: Poppins;
 
 @media (max-width: 1820px) {
-    background-position: 250px 480px;
+    background-position: 260px 470px;
   }
 
   @media (max-width: 1780px) {
-    background-position: 200px 480px;
+    background-position: 210px 470px;
   }
 
   @media (max-width: 1720px) {
-    background-position: 170px 480px;
+    background-position: 180px 470px;
   }
 
   @media (max-width: 1640px) {
-    background-position: 155px 480px;
+    background-position: 165px 470px;
   }
 
   @media (max-width: 1610px) {
-    background-position: 140px 480px;
+    background-position: 150px 470px;
   }
 
   @media (max-width: 1580px) {
-    background-position: 125px 480px;
+    background-position: 135px 470px;
   }
 
   @media (max-width: 1550px) {
-    background-position: 110px 480px;
+    background-position: 120px 470px;
   }
 
   @media (max-width: 1520px) {
-    background-position: 95px 480px;
+    background-position: 105px 470px;
   }
 
   @media (max-width: 1490px) {
-    background-position: 80px 480px;
+    background-position: 90px 470px;
   }
 
   @media (max-width: 1460px) {
-    background-position: 65px 480px;
+    background-position: 75px 470px;
   }
 
   @media (max-width: 1430px) {
-    background-position: 50px 480px;
+    background-position: 60px 470px;
   }
 
   @media (max-width: 1400px) {
-    background-position: 35px 480px;
+    background-position: 45px 470px;
   }
 
   @media (max-width: 1370px) {
-    background-position: 20px 480px;
+    background-position: 30px 470px;
   }
 
   @media (max-width: 1340px) {
-    background-position: 5px 480px;
+    background-position: 15px 470px;
   }
 
   @media (max-width: 1330px) {
-    background-position: -10px 480px;
+    background-position: 0px 470px;
   }
 
   @media (max-width: 1300px) {
-    background-position: -25px 480px;
+    background-position: -15px 470px;
   }
 
   @media (max-width: 1270px) {
-    background-position: -40px 480px;
+    background-position: -30px 470px;
   }
 
   @media (max-width: 1240px) {
-    background-position: -55px 480px;
+    background-position: -45px 470px;
   }
 
   @media (max-width: 1210px) {
-    background-position: -70px 480px;
+    background-position: -60px 470px;
   }
 
   @media (max-width: 1180px) {
-    background-position: -85px 480px;
+    background-position: -75px 470px;
   }
 
   @media (max-width: 1150px) {
-    background-position: -100px 480px;
+    background-position: -90px 470px;
   }
 
   @media (max-width: 1120px) {
-    background-position: -115px 480px;
+    background-position: -105px 470px;
   }
 
   @media (max-width: 1090px) {
-    background-position: -130px 480px;
+    background-position: -120px 470px;
   }
 
 `;
@@ -109,6 +110,8 @@ font-family: Poppins;
 const ArticleContainer = styled.div`
 display: flex;
 justify-content: center;
+width: 100%;
+gap: 60px;
 `;
 
 const Title = styled.h1`
@@ -124,18 +127,9 @@ const SubTitle = styled.h3`
 const Article = styled.article`
 display: flex;
 flex-direction: column;
-justify-content: space-around;
-flex-wrap: nowrap;
-margin: 0 20px;
-`;
-
-const Card = styled.div`
-display: flex;
 align-items: center;
-background-color: gray;
-border-radius: 0.4rem;
-width: 500px;
-min-width: 500px;
+justify-content: space-around;
+
 `;
 
 const ImageBox = styled.div`
@@ -143,6 +137,35 @@ min-width: 150px;
 
 `;
 
+const Card = styled.div`
+display: flex;
+align-items: center;
+background-color: gray;
+border-radius: 0.4rem;
+background-color: #DCDCDC;
+`;
+
+const CardIcon = styled.div`
+padding-left: 1rem;
+`;
+
+const CardDiv = styled.div`
+max-width: 400px;
+`;
+
+const CardHeading = styled.h4`
+margin-bottom: 0;
+padding: 0 2rem;
+font-size: 1.2rem;
+`;
+
+const CardParagraph = styled.p`
+margin-top: 0;
+font-size: 0.95rem;
+width: 300px;
+padding: 0 2rem;
+text-align: left;
+`;
 
 export const Agency = () => {
 
@@ -161,38 +184,38 @@ export const Agency = () => {
                 <Article>
 
                     <Card>
-                        <div>
+                        <CardIcon>
                         Icon Here
-                        </div>
+                        </CardIcon>
 
-                        <div>
-                        <h4>Brief</h4>
-                        <p>Complete brief writing or simple guidance on what to include,we've got you covered.</p>
-                        </div>
+                        <CardDiv>
+                        <CardHeading>Brief</CardHeading>
+                        <CardParagraph>Complete <strong>brief writing or simple guidance</strong> on what to include,we've got you covered.</CardParagraph>
+                        </CardDiv>
 
                     </Card>
 
                     <Card>
-                        <div>
+                        <CardIcon>
                         Icon Here
-                        </div>
+                        </CardIcon>
 
-                        <div>
-                        <h4>Search</h4>
-                        <p>In-depth agency search covering;criteria-matching,door knocking and due-dilligence vetting.</p>
-                        </div>
+                        <CardDiv>
+                        <CardHeading>Search</CardHeading>
+                        <CardParagraph>In-depth agency search covering;<strong>criteria-matching</strong>,door knocking and due-dilligence vetting.</CardParagraph>
+                        </CardDiv>
 
                     </Card>
 
                     <Card>
-                        <div>
+                        <CardIcon>
                         Icon Here
-                        </div>
+                        </CardIcon>
 
-                        <div>
-                        <h4>Pitch</h4>
-                        <p>Comprehensive pitch management,including comms,diary management and pitch hosting.</p>
-                        </div>
+                        <CardDiv>
+                        <CardHeading>Pitch</CardHeading>
+                        <CardParagraph>Comprehensive <strong>pitch management</strong>,including comms,diary management and pitch hosting.</CardParagraph>
+                        </CardDiv>
 
                     </Card>
 
