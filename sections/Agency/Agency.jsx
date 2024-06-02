@@ -143,6 +143,13 @@ align-items: center;
 background-color: gray;
 border-radius: 0.4rem;
 background-color: #DCDCDC;
+&:last-child {
+    border: 2px solid #6495ED;
+    h4 {
+        color: #6495ED;
+        text-decoration: underline;
+    }
+  }
 `;
 
 const CardIcon = styled.div`
