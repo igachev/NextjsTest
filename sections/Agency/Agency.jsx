@@ -9,8 +9,100 @@ background-image: url('/img/background.png');
 background-size: 900px;
 background-attachment: fixed;
 background-repeat: no-repeat;
-background-position: 300px 500px;
+background-position: 300px 480px;
 font-family: Poppins;
+
+@media (max-width: 1820px) {
+    background-position: 250px 480px;
+  }
+
+  @media (max-width: 1780px) {
+    background-position: 200px 480px;
+  }
+
+  @media (max-width: 1720px) {
+    background-position: 170px 480px;
+  }
+
+  @media (max-width: 1640px) {
+    background-position: 155px 480px;
+  }
+
+  @media (max-width: 1610px) {
+    background-position: 140px 480px;
+  }
+
+  @media (max-width: 1580px) {
+    background-position: 125px 480px;
+  }
+
+  @media (max-width: 1550px) {
+    background-position: 110px 480px;
+  }
+
+  @media (max-width: 1520px) {
+    background-position: 95px 480px;
+  }
+
+  @media (max-width: 1490px) {
+    background-position: 80px 480px;
+  }
+
+  @media (max-width: 1460px) {
+    background-position: 65px 480px;
+  }
+
+  @media (max-width: 1430px) {
+    background-position: 50px 480px;
+  }
+
+  @media (max-width: 1400px) {
+    background-position: 35px 480px;
+  }
+
+  @media (max-width: 1370px) {
+    background-position: 20px 480px;
+  }
+
+  @media (max-width: 1340px) {
+    background-position: 5px 480px;
+  }
+
+  @media (max-width: 1330px) {
+    background-position: -10px 480px;
+  }
+
+  @media (max-width: 1300px) {
+    background-position: -25px 480px;
+  }
+
+  @media (max-width: 1270px) {
+    background-position: -40px 480px;
+  }
+
+  @media (max-width: 1240px) {
+    background-position: -55px 480px;
+  }
+
+  @media (max-width: 1210px) {
+    background-position: -70px 480px;
+  }
+
+  @media (max-width: 1180px) {
+    background-position: -85px 480px;
+  }
+
+  @media (max-width: 1150px) {
+    background-position: -100px 480px;
+  }
+
+  @media (max-width: 1120px) {
+    background-position: -115px 480px;
+  }
+
+  @media (max-width: 1090px) {
+    background-position: -130px 480px;
+  }
 
 `;
 
